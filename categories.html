@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="navbar">
+        <div class="logo">My Cart</div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="categories.html">CATEGORY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+          <a href="login.html" class="button login">Login</a>
+            <a href="signup.html" class="button signup">Sign Up</a>
+        </div>
+    </header>
+    <br>
+  <div class="content">
+    <h1>Our Products</h1>
+
+    <div class="products-1">
+      <div class="product-2">
+        <img src="product.jpg" alt="Product 1">
+         <details>
+  <summary><b>skin care</b></summary>
+  <p> cleansing, moisturizing, and protecting (SPF) for basic health, with advanced steps like toning, exfoliating, and serums (Vitamin C, retinol) for specific concerns, all tailored to your skin type (oily, dry, combo, sensitive).</p>
+</details>
+        <button>click for more</button>
+      </div>
+<br>
+<br>
+      <div class="product-2">
+        <img src="product2.jpg" alt="Product 2">
+        <details>
+  <summary><b>jewellry</b></summary>
+  <p> Jewellery includes rings, necklaces, earrings, pendants, bracelets, brooches, anklets, bangles and more</p>
+</details>
+        <button><b>click for more</b></button>
+      </div>
+<br>
+<br>
+      <div class="product-2">
+        <img src="product4.jpg"alt="Product 2">
+        <details>
+  <summary><b>Bags</b></summary>
+  <p>casual, office, college, party, travel; mention if it’s lightweight, comfortable strap, easy to clean.</p></details>
+        <button><b>click for more</b></button>
+      </div>
+<br>
+<br>
+<div class="product-2">
+        <img src="product3.jpg" alt="Product 2">
+        <details>
+  <summary><b>clothes</b></summary>
+  <p>details an item's style (like A-line or polo), material (cotton, silk), features (zippers, ruffles, embroidery), fit (tight, loose), color, and suitable occasions (wedding, casual),.</p></details>
+        <button><b>click for more</b></button>
+      </div>
+
+    </div>
+
+   
+  <footer class="footer">
+    <p>&copy; 2026. copyright reserved by @123</p>
+  </footer>
+</body>
+<style>
+
+    /* Reset */
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+  background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;} /* space for fixed footer */
+
+:root {
+    --primary-color: #056785;
+    --accent-color: #faaaa1;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+    
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    opacity: 0.7;
+}
+
+/* Button Styles */
+.button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button.login {
+    background: transparent;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.button.signup {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+
+/* Main content */
+.content {
+  padding: 30px;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana',' sans-serif';
+}
+
+
+.products-1{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.product-2 {
+  width: 300px;
+  border: 1px solid #eed9d9;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-2 img {
+  width: 100%;
+  height: 60%;
+}
+
+.product-2 .details {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-2 button {
+  padding: 9px 12px;
+  border: none;
+  background-color: #056785;
+  color: white;
+  cursor: pointer;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  text-align: center;
+  padding:40px;
+  background-color: #fff;
+  border-top:1px solid #eee;
+  height:2%;
+
+}
+
+</style>
+</html>

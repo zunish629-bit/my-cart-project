@@ -1,0 +1,194 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">My Cart</div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="categories.html">CATEGORY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+         <a href="login.html" class="button login">Login</a>
+            <a href="signup.html" class="button signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The Best Way to<br><span>Make Someone Happy...</span></h1>
+                <p>
+                    Discover a smart shopping experience where you can find thousands of quality products,
+                    compare options instantly, and add everything you love to a simple, powerful cart.
+                </p>
+                <button class="cta-main" style=" padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;color:#056785;
+    background-color:var(--accent-color);">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="pic.jpg" alt="Happy customer">
+            </div>
+        </section>
+
+        
+
+        <section class="products">
+            <div class="products-image">
+                <img src="product.jpg" alt="Featured product">
+            </div>
+            <div class="products-text">
+                <h2>Our Featured Products</h2>
+                <p>
+                    These are our high quality products that make you feel better before and after your order.
+                    Totally recommended for you.
+                </p>
+              
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026. All rights reserved by @123</p>
+    </footer>
+</body>
+<style>
+:root {
+    --primary-color: #056785;
+    --accent-color: #faaaa1;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navbar Enhancement */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    opacity: 0.7;
+}
+
+/* Button Styles */
+.button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button.login {
+    background: transparent;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.button.signup {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Sections Layout */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero, .products {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
+}
+
+.hero-content, .products-text {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+/* Image Styling */
+.hero-image img, .products-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+</style>
+</html>
